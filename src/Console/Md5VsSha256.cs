@@ -3,6 +3,8 @@ using System.Security.Cryptography;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
 using BenchmarkDotNet.Diagnostics.Windows;
+using BenchmarkDotNet.Diagnostics.Windows.Configs;
+
 namespace Console;
 
 // 試運転モード
@@ -16,7 +18,7 @@ namespace Console;
 // Native Memery Profiler 
 [NativeMemoryProfiler]
 // Export の追加
-[MarkdownExporter, AsciiDocExporter, HtmlExporter, CsvExporter, RPlotExporter]
+//[MarkdownExporter, AsciiDocExporter, HtmlExporter, CsvExporter, RPlotExporter]
 public class Md5VsSha256
 {
 	private const int N = 10000;
