@@ -2,11 +2,20 @@ using System;
 using System.Security.Cryptography;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
+using BenchmarkDotNet.Diagnostics.Windows;
 namespace Console;
 
-[DryJob]
+// 試運転モード
+//[DryJob]
+// 短縮実行モード
+[ShortRunJob]
+// 最小時間/最大時間の列を追加
 [MinColumn, MaxColumn]
+// メモリ計測追加
 [MemoryDiagnoser]
+// Native Memery Profiler 
+[NativeMemoryProfiler]
+// Export の追加
 [MarkdownExporter, AsciiDocExporter, HtmlExporter, CsvExporter, RPlotExporter]
 public class Md5VsSha256
 {
