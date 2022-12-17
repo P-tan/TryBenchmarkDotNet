@@ -19,6 +19,8 @@ namespace Console;
 [NativeMemoryProfiler]
 // Export の追加
 //[MarkdownExporter, AsciiDocExporter, HtmlExporter, CsvExporter, RPlotExporter]
+[JsonExporterAttribute.Full]
+[JsonExporterAttribute.FullCompressed]
 public class Md5VsSha256
 {
 	private const int N = 10000;
