@@ -25,5 +25,10 @@ jobs:
     - name: Store benchmark result
       uses: rhysd/github-action-benchmark@v1
       with:
+        name: My benchmark
         tool: 'benchmarkdotnet'
         output-file-path: BenchmarkDotNet.Artifacts/results/Console.Md5VsSha256-report-full-compressed.json
+        # Access token to deploy GitHub Pages branch
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        # Push and deploy GitHub pages branch automatically
+        auto-push: true
