@@ -26,4 +26,4 @@ jobs:
       uses: rhysd/github-action-benchmark@v1
       with:
         tool: 'benchmarkdotnet'
-        output-file-path: BenchmarkDotNet.Artifacts/results/*.Benchmarks-report-full-compressed.json
+        output-file-path: BenchmarkDotNet.Artifacts/results/Console.Md5VsSha256-report-full-compressed.json
