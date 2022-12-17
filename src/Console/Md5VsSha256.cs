@@ -16,10 +16,10 @@ namespace Console;
 // メモリ計測追加
 [MemoryDiagnoser]
 // Native Memery Profiler 
-[NativeMemoryProfiler]
+//[NativeMemoryProfiler]
 // Export の追加
 //[MarkdownExporter, AsciiDocExporter, HtmlExporter, CsvExporter, RPlotExporter]
-[JsonExporterAttribute.Full]
+//[JsonExporterAttribute.Full]
 [JsonExporterAttribute.FullCompressed]
 public class Md5VsSha256
 {

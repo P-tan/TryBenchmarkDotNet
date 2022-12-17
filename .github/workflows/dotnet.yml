@@ -27,7 +27,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Benchmarking
-      run: dotnet run -c Release
+      run: dotnet run -c Release --profile src/Console/Console.csproj
     - name: Store benchmark result
       uses: rhysd/github-action-benchmark@v1
       with:
